@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flairstech Notes</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div class="card card--inverted">
+  <label for="myInput" id="callerId" >Caller Id : </label>
+  <textarea type="text" placeholder="Caller Id" id="myInput"></textarea>
+  <label for="myInput2" id="maindrive" >Main Drive : </label>
+  <textarea type="text" placeholder="Main Drive" id="myInput2"></textarea>
+  <label for="myInput3" id="actiontaken" >Action Taken : </label>
+  <textarea type="text" placeholder="Action Taken" id="myInput3"></textarea>
+  <label for="myInput4"  id="outcome" >Outcome : </label>
+  <textarea type="text" placeholder="Outcome" id="myInput4"></textarea>
+  <label for="myInput5"  id="poutcome" >Potential outcome : </label>
+  <textarea type="text" placeholder="Potenial Outcome" id="myInput5"></textarea>
+  <textarea type="text" value="" id="output"></textarea>
+  <button onclick="myFunction()">Copy text</button>
+  </div>
+  <script>
+      function myFunction() {
+        var copyText = document.getElementById("myInput");
+        var labelCallerId = document.getElementById("callerId");
+        var copyText2 = document.getElementById("myInput2");
+        var labelMainDrive = document.getElementById("maindrive");
+        var copyText3 = document.getElementById("myInput3");
+        var labelActionTaken = document.getElementById("actiontaken");
+        var copyText4 = document.getElementById("myInput4");
+        var labelOutCome = document.getElementById("outcome");
+        var copyText5 = document.getElementById("myInput5");
+        var labelPOutcome = document.getElementById("poutcome");
+        var output = document.getElementById("output");
+        output.value = 
+        labelCallerId.innerText + copyText.value + "\n" 
+        + labelMainDrive.innerText + copyText2.value + "\n" 
+        + labelActionTaken.innerText + copyText3.value + "\n" 
+        + labelOutCome.innerText + copyText4.value + "\n" 
+        + labelPOutcome.innerText + copyText5.value + "\n" + "\n" + "~jimmy";
+        output.select();
+        document.execCommand("copy");
+  
+      }
+  </script>
+<footer>
+	<p>Created by JimmyTurnner V1 . © 2021</p>
+</footer>
+</html>
