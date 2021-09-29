@@ -7,3 +7,11 @@ added Clear botton to clear the notes
 V2 
 
 - New style adding more features soon.
+
+
+
+
+
+
+Downloads
+[Agent notes.zip](https://github.com/syinzxx/Notes/files/7252904/Agent.notes.zip)
